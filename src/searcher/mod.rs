@@ -1,8 +1,7 @@
-use crate::{document::Document, indexer::InvertedIndex, rank::Scorer, tokenizer::Tokenizer};
+use crate::{document::Document, indexer::InvertedIndex, tokenizer::Tokenizer};
 
 pub struct SearchEngine {
     index: InvertedIndex,
-    scorer: Scorer,
     tokenizer: Tokenizer,
 }
 
